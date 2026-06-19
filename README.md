@@ -130,6 +130,12 @@ Apple MobileSync backup example:
   -Target "D:\AppleMobileSync\Backup"
 ```
 
+Find large individual files under a selected folder:
+
+```
+    .\scripts\scan_files.ps1 -Path "C:\Users\hoge\AppData" -Top 30 -MinimumSizeMB 100
+```
+
 ## Example: Kindle content
 
 Source:
@@ -237,6 +243,7 @@ windows-storage-rebalance-toolkit/
 │   ├── scan_drive.ps1
 │   ├── scan_folder.ps1
 │   ├── count_files.ps1
+│   ├── scan_files.ps1
 │   └── move_folder_with_junction.ps1
 ├── docs/
 │   ├── safety-policy.md
